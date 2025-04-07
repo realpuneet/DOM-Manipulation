@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(107, 159, 159);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    border-radius: 20px;
+    width: 200px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    text-align: center;
+}
+#card img{
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+}
+#card h4{
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}
+#card button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0041c4;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+button:active{
+    transform: scale(0.95);
+}
