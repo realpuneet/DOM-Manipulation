@@ -1,0 +1,42 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+/* Full Height */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+   
+}
+.elem{
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    padding-left: 5px;
+    position: relative;
+}
+.elem img{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0;
+    mix-blend-mode: difference;
+    transition: all linear 0.3s;
+}

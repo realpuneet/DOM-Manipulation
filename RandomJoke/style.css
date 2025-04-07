@@ -1,0 +1,53 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full Height */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+#main{
+    height: 300px;
+    width: 450px;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px;
+    border-radius: 20px;
+}
+p{
+    text-align: center;
+}
+h3{
+    font-size: 2rem;
+}
+button{
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(79, 79, 79);
+    color: gainsboro;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 15px ;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(79, 79, 79, 0.8);
+    transition: all ease-in-out 0.3s;
+}
