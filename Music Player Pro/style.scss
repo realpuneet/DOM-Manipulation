@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'trolletto';
+    src: url(./fonts/Thorletto\ \(free\).Otf);
+}
+@font-face {
+    font-family: 'trolletto-1';
+    src: url(./fonts/Thorletto\ \(free\).ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    height: 100vh;
+    width: 100%;
+    // position: relative;
+}
+
+#bg{
+    position: relative;
+    height: 450px;
+    width: 850px;
+    display: flex;
+    justify-content: center;
+
+}
+#main{
+    position: absolute;
+    height: 350px;
+    width: 800px;
+    border-radius: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+    display: flex;
+
+    #left{
+        height: 100%;
+        width: 40%;
+        // background-color: #fff;
+        .inside-left{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            // background: linear-gradient(#60cf94 50%, transparent 50%);
+            position: relative;
+            .top{
+                position: relative;
+                height: 100%;
+                width: 100%;
+                background-color: #29ABED;
+                border-radius: 10% 10% 10% 10%;
+                h3{
+                    padding-top: 20px;
+                    text-align: center;
+                    font-family: 'trolletto';
+                    text-align: center;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+            .btm{
+                bottom: 0;
+                position: absolute;
+                height: 75%;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 10% 10% 0 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                #btm-in{
+                    border-radius: 50%;
+                    height: 80%;
+                    width: 67%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .rotate {
+                    animation: rotate360 9s linear infinite;
+                  }
+                @keyframes rotate360 {
+                    0% {
+                      transform: rotate(0deg);
+                    }
+                    100% {
+                      transform: rotate(360deg);
+                    }
+                  }
+            }
+        }
+    }
+    #right{
+        height: 100%;
+        width: 50%;
+        background-color: #fff;
+        border-radius: 10% 10% 0 0;
+        .inside-left{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            position: relative;
+            .top{
+                position: relative;
+                height: 100%;
+                width: 100%;
+                background-color: #29ABED;
+                border-radius: 10% 10% 10% 10%;
+                h3{
+                    text-align: center;
+                    padding-top: 20px;
+                    font-family: 'trolletto-1';
+                    text-align: center;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+            .btm{
+                bottom: 0;
+                position: absolute;
+                height: 75%;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 10% 10% 0 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                #all-songs{
+                    height: 85%;
+                    width: 100%;
+                    // background-color: #234;
+                    overflow-y: scroll;
+                    .song-card{
+                        display: flex;
+                        padding: 0.8rem 1rem;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-top: solid 1px #333;
+                        // gap: 0.5rem;
+                        .song-card-item{
+                            display: flex;
+                            pointer-events: none;
+                            gap: 1rem;
+                           img{ height: 3.5rem;
+                            width: 3.5rem;
+                            object-fit: cover;
+                            border-radius: 0.25rem;
+                           }
+                           .song-details{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            gap: 0.5rem;
+                            h4{
+                                font-size: 1rem;
+                                font-weight: 500;
+                                color: #333;
+                            }
+                            h5{
+                                font-size: 0.7rem;
+                                font-weight: 400;
+                                color: #333;
+                            }
+                           }
+                        }
+                        .song-duration{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 0.8rem;
+                            p{
+                                color: #333;
+                            }
+                        }
+                    }
+                    .song-card:nth-last-child(1){
+                        border-bottom: solid 1px #333;
+                        
+                    }
+                    .song-card:first-child {
+                        border-top: none;
+                      }
+                    
+                    .song-card:hover{
+                        background-color: #ccc;
+                        cursor: pointer;
+                        transition: all ease-in-out 0.3s;
+                    }
+                }
+                ::-webkit-scrollbar{
+                display: none;
+            }  
+            }
+        }
+    }
+}
+
+#player{
+    height: 50px;
+    width: 728px;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    bottom: 40px;
+    border-radius: 0 0 10% 10%;
+    h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        padding: 0.5rem;
+        background-color: #d6d6d6;
+        border-radius: 50%;
+    }
+    h3:active{
+        scale: 0.93;
+    }
+}
