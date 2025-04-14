@@ -52,18 +52,6 @@ html {
   font-size: 1.6vw;
 }
 
-@media (max-width: 400px) {
-  .logo-text {
-    font-family: "Bungee Spice", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: transparent;
-    background: linear-gradient(to right, #69628a, rgba(7, 6, 15, 0.862745098), #040309);
-    -webkit-background-clip: text;
-    opacity: 0.8;
-    font-size: 5vw;
-  }
-}
 .icon:hover:not(.icon-1) {
   cursor: pointer;
   transform: scale(1.1);
@@ -78,4 +66,21 @@ html {
   transition: all 0.4s ease-in-out;
   color: #69628A;
   opacity: 1;
+}
+
+.item-name {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: transparent;
+  background: linear-gradient(to right, #69628a, rgba(7, 6, 15, 0.7098039216), #040309);
+  -webkit-background-clip: text;
+  opacity: 0.8;
+  font-size: 1.2vw;
+}
+
+.item-price {
+  color: transparent;
+  background: linear-gradient(to right, #69628a, rgba(7, 6, 15, 0.7098039216), #040309);
+  -webkit-background-clip: text;
 }

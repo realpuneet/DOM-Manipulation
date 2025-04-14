@@ -34,11 +34,11 @@ products.forEach(function(product,index){
                     <img src="${product.image}" alt="">
                 </div>
                 <div class="data w-full px-2 py-5">
-                    <h1 class="font-semibold text-xl leading-none tracking-tight">${product.name}</h1>
+                    <h1 class="font-semibold item-name text-xl leading-none tracking-tight">${product.name}</h1>
                     <div class="flex justify-between w-full items-center mt-2">
                         <div class="w-1/2">
-                            <h3 class="font-semibold opacity-30">${product.headline}</h3>
-                            <h4 class="font-semibold mt-2">${product.price}</h4>
+                            <h3 class="font-semibold item-headline opacity-30">${product.headline}</h3>
+                            <h4 class="font-semibold item-price mt-2">${product.price}</h4>
                         </div>
                         <button data-index="${index}" class="add w-10 h-10 rounded-full shader text-yellow-400" title="Add to Cart">
                             <i data-index="${index}" class="add ri-add-line"></i>
@@ -63,9 +63,9 @@ function addPopularProducts(){
                             alt="">
                     </div>
                     <div class="data py-2 w-full">
-                        <h1 class="leading-none font-semibold">${product.name}</h1>
+                        <h1 class="leading-none item-name font-semibold">${product.name}</h1>
                         <h4 class="leading-none mt-2 text-sm font-semibold opacity-20">${product.headline}</h4>
-                        <h4 class="mt-3 font-semibold text-zinc-500">${product.price}</h4>
+                        <h4 class="mt-3 item-price font-semibold text-zinc-500">${product.price}</h4>
                     </div>
                 </div>`;
     })
@@ -83,28 +83,33 @@ function addToCart(){
     })
 }
 
-function showCart(){
+function showCart() {
     document.querySelector(".carticon")
-    .addEventListener("click",()=>{
-        document.querySelector(".cartexpand").style.display = "block";
+    .addEventListener("click", () => {
+        const cartExpand = document.querySelector(".cartexpand");
+        if (cartExpand.style.display === "block") {
+            cartExpand.style.display = "none"; // Hide the cart if it's already visible
+        } else {
+            cartExpand.style.display = "block"; // Show the cart if it's hidden
 
-        let clutter = "";
-        cart.forEach(function(product, index){
-            clutter += `<div class="cartproduct flex items-center gap-2 bg-white p-2 rounded-lg">
-                        <div class="w-10 h-10 flex-shrink-0 rounded-lg border-4 border-white overflow-hidden">
-                            <img class="w-full h-full object-cover"
-                                src="${product.image}"
-                                alt="">
-                        </div>
-                        <div class="data py-2 w-full">
-                            <h1 class="leading-none font-semibold">${product.name}</h1>
-                            <h4 class="leading-none mt-2 text-sm font-semibold opacity-20">${product.headline}</h4>
-                            <h4 class="mt-3 font-semibold text-zinc-500">${product.price}</h4>
-                        </div>
-                    </div>`;
-        })
-        document.querySelector(".cartexpand").innerHTML = clutter;
-    })
+            let clutter = "";
+            cart.forEach(function(product, index) {
+                clutter += `<div class="cartproduct flex items-center gap-2 bg-grey-300 p-2 rounded-lg">
+                            <div class="w-10 h-10 flex-shrink-0 rounded-lg border-4 border-white overflow-hidden">
+                                <img class="w-full h-full object-cover"
+                                    src="${product.image}"
+                                    alt="">
+                            </div>
+                            <div class="data  py-2 w-full">
+                                <h1 class="leading-none font-['roboto'] font-semibold">${product.name}</h1>
+                                <h4 class="leading-none mt-2  text-sm font-semibold opacity-20">${product.headline}</h4>
+                                <h4 class="mt-3 font-semibold  text-zinc-500">${product.price}</h4>
+                            </div>
+                        </div>`;
+            });
+            cartExpand.innerHTML = clutter;
+        }
+    });
 }
 
 showCart()
