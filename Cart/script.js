@@ -4,18 +4,20 @@
 
 
 let products = [
+    {name: "Pablo Montes ", headline: "Sleeping Cough", price: "500$", image: "https://plus.unsplash.com/premium_photo-1705169612592-32610774a5d0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hhaXJ8ZW58MHx8MHx8fDA%3D"},
+    {name: "Clarkson", headline: "Leatherette 1 Seater Sofa", price: "150$", image: "https://images.durian.in/Durian/durian/product/800x800/764031713335880.jpg?tr=w-355,pr-true,f-auto"},
+    {name: "Stool", headline: "Wooden stool", price: "150$", image: "https://images.unsplash.com/photo-1503602642458-232111445657?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhaXJ8ZW58MHx8MHx8fDA%3D"},
+    {name: "Hall/Class Chair", headline: "Fully metallic", price: "800$", image: "https://images.unsplash.com/photo-1507878866276-a947ef722fee?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hhaXJzfGVufDB8fDB8fHww"},
+    {name: "White Premium Chair", headline: "Soft Like Cloud", price: "500$", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hhaXJ8ZW58MHx8MHx8fDA%3D"},
+    {name: "Meredith Leather ", headline: "1 Seater Power Recliner", price: "800$", image: "https://images.durian.in/Durian/durian/product/800x800/911861698239881.jpg?tr=w-355,pr-true,f-auto"},
     {name: "White Chair", headline: "Soft Like Cloud", price: "500$", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hhaXJ8ZW58MHx8MHx8fDA%3D"},
     {name: "Pink Chair", headline: "Feels like foam", price: "800$", image: "https://plus.unsplash.com/premium_photo-1690971631360-c7b4f08b4f94?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNoYWlyfGVufDB8fDB8fHww"},
-    {name: "Stool", headline: "Wooden stool", price: "150$", image: "https://images.unsplash.com/photo-1503602642458-232111445657?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhaXJ8ZW58MHx8MHx8fDA%3D"},
-    {name: "White Chair", headline: "Soft Like Cloud", price: "500$", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hhaXJ8ZW58MHx8MHx8fDA%3D"},
-    {name: "Pink Chair", headline: "Feels like foam", price: "800$", image: "https://plus.unsplash.com/premium_photo-1690971631360-c7b4f08b4f94?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNoYWlyfGVufDB8fDB8fHww"},
-    {name: "Stool", headline: "Wooden stool", price: "150$", image: "https://images.unsplash.com/photo-1503602642458-232111445657?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhaXJ8ZW58MHx8MHx8fDA%3D"},
-    {name: "White Chair", headline: "Soft Like Cloud", price: "500$", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hhaXJ8ZW58MHx8MHx8fDA%3D"},
-    {name: "Pink Chair", headline: "Feels like foam", price: "800$", image: "https://plus.unsplash.com/premium_photo-1690971631360-c7b4f08b4f94?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNoYWlyfGVufDB8fDB8fHww"},
-    {name: "Stool", headline: "Wooden stool", price: "150$", image: "https://images.unsplash.com/photo-1503602642458-232111445657?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhaXJ8ZW58MHx8MHx8fDA%3D"},
+    {name: "Rainer", headline: "Soft Light Blue", price: "1150$", image: "https://images.durian.in/Durian/durian/product/800x800/252961737983359.jpg?tr=w-355,pr-true,f-auto"},
 ];
-
 let popular = [
+    {name: "Hand Bag", headline: "Soft Like Cloud", price: "70$", image: "https://plus.unsplash.com/premium_photo-1678739395192-bfdd13322d34?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dHJhdmVsJTIwYmFnfGVufDB8fDB8fHww"},
+    {name: "Trolley bag", headline: "Feels like foam", price: "200$", image: "https://images.unsplash.com/photo-1630573133579-75e54088eb4a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dHJhdmVsJTIwYmFnfGVufDB8fDB8fHww"},
+    {name: "Travelling bag", headline: "Wooden stool", price: "100$", image: "https://images.unsplash.com/photo-1557160836-f3a6d1afaab2?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRyYXZlbCUyMGJhZ3xlbnwwfHwwfHx8MA%3D%3D"},
     {name: "Hand Bag", headline: "Soft Like Cloud", price: "70$", image: "https://plus.unsplash.com/premium_photo-1678739395192-bfdd13322d34?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dHJhdmVsJTIwYmFnfGVufDB8fDB8fHww"},
     {name: "Trolley bag", headline: "Feels like foam", price: "200$", image: "https://images.unsplash.com/photo-1630573133579-75e54088eb4a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dHJhdmVsJTIwYmFnfGVufDB8fDB8fHww"},
     {name: "Travelling bag", headline: "Wooden stool", price: "100$", image: "https://images.unsplash.com/photo-1557160836-f3a6d1afaab2?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRyYXZlbCUyMGJhZ3xlbnwwfHwwfHx8MA%3D%3D"},
